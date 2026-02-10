@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "nyan< script",
+  "version": "1.0.0",
+  "description": "高速・安心安全・セキュリティ万全のnyan< script言語ランタイム",
+  "permissions": [],
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["nyanscript-interpreter.js", "content-script.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["nyanscript-interpreter.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}

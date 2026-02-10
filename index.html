@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nyan< script デモ 🐱</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            padding-top: 20px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .tagline {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #ff69b4;
+            padding-bottom: 10px;
+        }
+        
+        .section h3 {
+            color: #764ba2;
+            margin: 25px 0 15px 0;
+            font-size: 1.3em;
+        }
+        
+        .code-preview {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+            font-size: 14px;
+            overflow-x: auto;
+            margin: 15px 0;
+            border-left: 4px solid #ff69b4;
+            line-height: 1.6;
+        }
+        
+        .note {
+            background: #e7f3ff;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            color: #333;
+        }
+        
+        .inline-code {
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #e83e8c;
+        }
+        
+        .demo-box {
+            background: #f8f9fa;
+            border: 2px dashed #667eea;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+    </style>
+    
+    <!-- ⭐ 拡張機能検出スクリプト（必須） -->
+    <script src="nyanscript-detector.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐱 nyan&lt; script</h1>
+            <p class="tagline">高速・安心安全・セキュリティ万全</p>
+        </header>
+        
+        <div class="section">
+            <h2>🚀 ようこそ！</h2>
+            <p>このページはnyan&lt; scriptのデモページです。</p>
+            <div class="note">
+                <strong>💡 Note:</strong> このページを正しく表示するには、<strong>nyan&lt; script Chrome拡張機能</strong>が必要です。
+                拡張機能がインストールされていない場合は、上部にインストール案内が表示されます。
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>📖 実行デモ</h2>
+            
+            <h3>1. Hello World（タグ内直接）</h3>
+            <div class="code-preview">&lt;nyscript&gt;
+console.outputx("Hello, nyan&lt; script! 🐱")
+&lt;/nyscript&gt;</div>
+            
+            <div class="demo-box">
+                <strong>実行結果：</strong>
+                <nyscript>
+console.outputx("Hello, nyan< script! 🐱")
+                </nyscript>
+            </div>
+            
+            <h3>2. 外部ファイル読み込み</h3>
+            <div class="code-preview">&lt;nyscript src="scripts/hello.nys"&gt;&lt;/nyscript&gt;</div>
+            
+            <div class="demo-box">
+                <strong>実行結果：</strong>
+                <nyscript src="scripts/hello.nys"></nyscript>
+            </div>
+            
+            <h3>3. 変数と計算</h3>
+            <div class="code-preview">&lt;nyscript&gt;
+x = 100
+y = 200
+console.outputx("計算結果: " + (x + y))
+&lt;/nyscript&gt;</div>
+            
+            <div class="demo-box">
+                <strong>実行結果：</strong>
+                <nyscript>
+x = 100
+y = 200
+console.outputx("計算結果: " + (x + y))
+                </nyscript>
+            </div>
+            
+            <h3>4. ループ処理</h3>
+            <div class="code-preview">&lt;nyscript&gt;
+repeat i 5 {
+    console.outputx("🐱 Nyan! #" + i + "\n")
+}
+&lt;/nyscript&gt;</div>
+            
+            <div class="demo-box">
+                <strong>実行結果：</strong>
+                <nyscript>
+repeat i 5 {
+    console.outputx("🐱 Nyan! #" + i + "\n")
+}
+                </nyscript>
+            </div>
+            
+            <h3>5. 条件分岐</h3>
+            <div class="code-preview">&lt;nyscript src="scripts/conditional.nys"&gt;&lt;/nyscript&gt;</div>
+            
+            <div class="demo-box">
+                <strong>実行結果：</strong>
+                <nyscript src="scripts/conditional.nys"></nyscript>
+            </div>
+            
+            <h3>6. 配列とオブジェクト</h3>
+            <div class="code-preview">&lt;nyscript src="scripts/data-structures.nys"&gt;&lt;/nyscript&gt;</div>
+            
+            <div class="demo-box">
+                <strong>実行結果：</strong>
+                <nyscript src="scripts/data-structures.nys"></nyscript>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>📦 構成ファイル</h2>
+            <p>このデモサイトの構成：</p>
+            <ul style="line-height: 2; margin-left: 20px;">
+                <li><span class="inline-code">index.html</span> - このページ</li>
+                <li><span class="inline-code">nyanscript-detector.js</span> - 拡張機能検出スクリプト（必須）</li>
+                <li><span class="inline-code">scripts/hello.nys</span> - Hello Worldスクリプト</li>
+                <li><span class="inline-code">scripts/conditional.nys</span> - 条件分岐デモ</li>
+                <li><span class="inline-code">scripts/data-structures.nys</span> - データ構造デモ</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

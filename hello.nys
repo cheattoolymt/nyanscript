@@ -1,0 +1,5 @@
+#"Hello Worldスクリプト"#
+
+message = "外部ファイルから実行しています！"
+console.outputx(message + "\n")
+console.outputx("nyan< script is awesome! 🚀")

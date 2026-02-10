@@ -1,0 +1,18 @@
+#"条件分岐のデモ"#
+
+temperature = 25
+
+if temperature == 30 then {
+    console.outputx("暑いです！🌞\n")
+elif temperature == 20 then {
+    console.outputx("涼しいです 🍃\n")
+else {
+    console.outputx("快適な気温です 😊 (現在: " + temperature + "度)\n")
+}
+
+status = "OK"
+if status == "OK" then {
+    console.outputx("システム正常動作中 ✅")
+else {
+    console.outputx("エラーが発生しています ❌")
+}

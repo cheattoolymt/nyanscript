@@ -1,0 +1,20 @@
+#"配列とオブジェクトのデモ"#
+
+#"配列の操作"#
+fruits = ["りんご", "バナナ", "オレンジ", "ぶどう"]
+console.outputx("=== 配列デモ ===\n")
+console.outputx("果物リスト:\n")
+console.outputx("1. " + fruits[0] + "\n")
+console.outputx("2. " + fruits[1] + "\n")
+console.outputx("3. " + fruits[2] + "\n")
+console.outputx("4. " + fruits[3] + "\n")
+
+console.outputx("\n")
+
+#"オブジェクトの操作"#
+cat = {name: "にゃんすく", age: 3, color: "茶色"}
+console.outputx("=== オブジェクトデモ ===\n")
+console.outputx("猫の情報:\n")
+console.outputx("名前: " + cat.name + "\n")
+console.outputx("年齢: " + cat.age + "歳\n")
+console.outputx("色: " + cat.color)
